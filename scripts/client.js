@@ -31,7 +31,7 @@ scene.add(line);
 
 // Second Image (Text with image and white background)
 // Load image as texture
-const texture2 = new THREE.TextureLoader().load( '../assets/icon.PNG' );
+const texture2 = new THREE.TextureLoader().load( '../assets/appp.png' );
 // immediately use the texture for material creation
 const material2 = new THREE.MeshBasicMaterial( { map: texture2, side: THREE.DoubleSide } );
 // Create plane geometry
@@ -42,6 +42,7 @@ const plane2 = new THREE.Mesh( geometry2, material2 );
 plane2.position.set(0 , 0 , -200);
 // Place plane geometry
 scene.add( plane2 );
+
 
 // Position our camera so we can see the shape
 camera.position.z = 10;
