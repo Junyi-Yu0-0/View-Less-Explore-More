@@ -303,7 +303,7 @@ function init() {
 
   // 9 Image (Text with image and white background)
   // Load image as texture
-  const texture9 = new THREE.TextureLoader().load( '../assets/video.png' );
+  const texture9 = new THREE.TextureLoader().load( '../assets/video.PNG' );
   // immediately use the texture for material creation
   const material9 = new THREE.MeshBasicMaterial( { map: texture9, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -347,7 +347,7 @@ function init() {
       var mesh;
       // Load preanimated model, add material, and add it to the scene
       const loader = new GLTFLoader().load(
-          "../assets/pc.glb",
+          "assets/pc.glb",
           function (gltf) {
               gltf.scene.traverse(function (child) {
                   if (child.isMesh) {
