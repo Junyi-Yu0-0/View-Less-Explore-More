@@ -335,11 +335,11 @@ function init() {
   // immediately use the texture for material creation
   const material11 = new THREE.MeshBasicMaterial( { map: texture11, side: THREE.DoubleSide } );
   // Create plane geometry
-  const geometry11 = new THREE.PlaneGeometry( 410, 170 );
+  const geometry11 = new THREE.PlaneGeometry( 460, 190 );
   // Apply image texture to plane geometry
   const plane11 = new THREE.Mesh( geometry11, material11 );
   // Position plane geometry
-  plane11.position.set(0 , 120 , -150);
+  plane11.position.set(0 , 138 , -150);
   // Place plane geometry
   scene.add( plane11 );
 
@@ -357,7 +357,7 @@ function init() {
               // set position and scale
               mesh = gltf.scene;
               mesh.position.set(0, 6, -80);
-              mesh.rotation.set(0, 1.5, 0);
+              mesh.rotation.set(0, 1.57, 0);
               mesh.scale.set(10, 10, 15);
               // Add model to scene
               scene.add(mesh);
