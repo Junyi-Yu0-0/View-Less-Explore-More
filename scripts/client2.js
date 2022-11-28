@@ -191,7 +191,7 @@ function init() {
 
   // 1 Image (red and purple glitch map)
   // Load image as texture
-  const texture = new THREE.TextureLoader().load( './assets/app.png' );
+  const texture = new THREE.TextureLoader().load( '../assets/app.png' );
   // Immediately use the texture for material creation
   const material = new THREE.MeshBasicMaterial( { map: texture, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -205,7 +205,7 @@ function init() {
 
   // 2 Image (Text with image and white background)
   // Load image as texture
-  const texture2 = new THREE.TextureLoader().load( './assets/appp.png' );
+  const texture2 = new THREE.TextureLoader().load( '../assets/appp.png' );
   // immediately use the texture for material creation
   const material2 = new THREE.MeshBasicMaterial( { map: texture2, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -219,7 +219,7 @@ function init() {
 
   // 3 Image (Text with image and white background)
   // Load image as texture
-  const texture3 = new THREE.TextureLoader().load( './assets/bo.PNG' );
+  const texture3 = new THREE.TextureLoader().load( '../assets/bo.PNG' );
   // immediately use the texture for material creation
   const material3 = new THREE.MeshBasicMaterial( { map: texture3, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -233,7 +233,7 @@ function init() {
 
   // 4 Image (Text with image and white background)
   // Load image as texture
-  const texture4 = new THREE.TextureLoader().load( './assets/derekh.png' );
+  const texture4 = new THREE.TextureLoader().load( '../assets/derekh.png' );
   // immediately use the texture for material creation
   const material4 = new THREE.MeshBasicMaterial( { map: texture4, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -247,7 +247,7 @@ function init() {
 
   // 5 Image (Text with image and white background)
   // Load image as texture
-  const texture5 = new THREE.TextureLoader().load( './assets/me.png' );
+  const texture5 = new THREE.TextureLoader().load( '../assets/me.png' );
   // immediately use the texture for material creation
   const material5 = new THREE.MeshBasicMaterial( { map: texture5, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -261,7 +261,7 @@ function init() {
 
   // 6 Image (Text with image and white background)
   // Load image as texture
-  const texture6 = new THREE.TextureLoader().load( './assets/meme.png' );
+  const texture6 = new THREE.TextureLoader().load( '../assets/meme.png' );
   // immediately use the texture for material creation
   const material6 = new THREE.MeshBasicMaterial( { map: texture6, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -275,7 +275,7 @@ function init() {
 
   // 7 Image (Text with image and white background)
   // Load image as texture
-  const texture7 = new THREE.TextureLoader().load( './assets/tt.png' );
+  const texture7 = new THREE.TextureLoader().load( '../assets/tt.png' );
   // immediately use the texture for material creation
   const material7 = new THREE.MeshBasicMaterial( { map: texture7, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -289,7 +289,7 @@ function init() {
 
   // 8 Image (Text with image and white background)
   // Load image as texture
-  const texture8 = new THREE.TextureLoader().load( './assets/ttc.png' );
+  const texture8 = new THREE.TextureLoader().load( '../assets/ttc.png' );
   // immediately use the texture for material creation
   const material8 = new THREE.MeshBasicMaterial( { map: texture8, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -303,7 +303,7 @@ function init() {
 
   // 9 Image (Text with image and white background)
   // Load image as texture
-  const texture9 = new THREE.TextureLoader().load( './assets/video.png' );
+  const texture9 = new THREE.TextureLoader().load( '../assets/video.png' );
   // immediately use the texture for material creation
   const material9 = new THREE.MeshBasicMaterial( { map: texture9, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -317,7 +317,7 @@ function init() {
 
   // 10 Image (Text with image and white background)
   // Load image as texture
-  const texture10 = new THREE.TextureLoader().load( './assets/cu.png' );
+  const texture10 = new THREE.TextureLoader().load( '../assets/cu.png' );
   // immediately use the texture for material creation
   const material10 = new THREE.MeshBasicMaterial( { map: texture10, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -331,7 +331,7 @@ function init() {
 
   // 11 Image (Text with image and white background)
   // Load image as texture
-  const texture11 = new THREE.TextureLoader().load( './assets/bg.png' );
+  const texture11 = new THREE.TextureLoader().load( '../assets/bg.png' );
   // immediately use the texture for material creation
   const material11 = new THREE.MeshBasicMaterial( { map: texture11, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -347,7 +347,7 @@ function init() {
       var mesh;
       // Load preanimated model, add material, and add it to the scene
       const loader = new GLTFLoader().load(
-          "./assets/pc.glb",
+          "../assets/pc.glb",
           function (gltf) {
               gltf.scene.traverse(function (child) {
                   if (child.isMesh) {
